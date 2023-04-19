@@ -1300,7 +1300,25 @@ li.feature-block-li::before {
   margin-bottom: 15px;
   position: relative;
   z-index: 1;
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
+}
+.feature-block-title-note-box p {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #C53672;
+  margin-bottom: 0;
+  padding-block: 10px 15px;
+}
+.feature-block-right-img .feature-block-title-note-box p {
+  text-align: right;
+  padding-inline: 50px 20px;
+}
+.feature-block-left-img .feature-block-title-note-box p {
+  text-align: left;
+  padding-inline: 20px 50px;
 }
 
 .feature-block-right-img .feature-block-top-box {
@@ -2495,7 +2513,14 @@ iframe.video-box-iframe {
   z-index: 1;
   justify-content: flex-start;
   padding-left: 8%;
-  opacity: 0 !important;
+  /* opacity: 0 !important; */
+}
+.feature-page-block-top-box .feature-block-title-note-box p {
+  font-size: 28px;
+}
+.feature-page-block-left-img .feature-block-title-note-box p {
+  text-align: left;
+  padding-inline: 65px 20px;
 }
 
 .feature-page-block-count-box {
@@ -3354,6 +3379,12 @@ a.pricing-reg-btn {
   .feature-item-main-desc p {
     font-size: 18px;
   }
+  .feature-block-title-note-box p {
+    font-size: 28px;
+  }
+  .feature-page-block-top-box .feature-block-title-note-box p {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width:1199px) {
@@ -3666,6 +3697,15 @@ a.pricing-reg-btn {
 }
 .contact-map-content p {
   font-size: 18px;
+}
+.feature-block-title-note-box p {
+  font-size: 24px;
+}
+.feature-page-block-top-box .feature-block-title-note-box p {
+  font-size: 20px;
+}
+.feature-page-block-left-img .feature-block-title-note-box p {
+  padding-inline: 50px 20px;
 }
 }
 
@@ -4444,6 +4484,12 @@ form.sign-form-main label {
 .demo-video-btns-box {
   flex-flow: wrap;
 }
+.feature-block-title-note-box p {
+  font-size: 22px;
+}
+.feature-page-block-left-img .feature-block-title-note-box p {
+  padding-inline: 20px 20px;
+}
 }
 
 @media screen and (max-width:576px) {
@@ -4571,6 +4617,10 @@ button.navbar-toggler {
 .why-choose-grid-item-box {
   max-width: 100%;
   padding-inline: 10px;
+}
+.feature-block-title-note-box p {
+  font-size: 20px;
+  padding: 10px 20px !important;
 }
 }
 
