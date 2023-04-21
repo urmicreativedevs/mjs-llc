@@ -26,3 +26,23 @@ $(document).ready(function () {
         $('.map-org-box').find(mcid).addClass('mapactive');
     });
 });
+
+$(document).ready(function () {
+    $('.img-stat-dot').hover(function() {
+        $(this).addClass('mapahover');
+        var newhov=$(this).attr('id');
+        $('.'+newhov).addClass('mapahover');
+      }, function() {
+        $('.img-stat-dot').removeClass('mapahover');
+        $('.map-list-name').removeClass('mapahover');
+      });
+
+    $('.map-list-name').hover(function() {
+        $(this).addClass('mapahover');
+        var newhov=$(this).attr('class').split(' ')[1];
+        $('#'+newhov).addClass('mapahover');
+      }, function() {
+        $('.img-stat-dot').removeClass('mapahover');
+        $('.map-list-name').removeClass('mapahover');
+      });
+});
