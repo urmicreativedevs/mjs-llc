@@ -13,7 +13,9 @@ body {
   font-size: 16px;
   color: #000;
 }
-
+a {
+  text-decoration: none !important;
+}
 .dropdown-toggle::after {
   display: none;
 }
@@ -189,7 +191,7 @@ a.banner-btn.hb-light:hover {
   background-size: contain;
   background-position: top center;
   width: 100%;
-  height: 60%;
+  height: 90%;
   top: -1vw;
 }
 
@@ -284,6 +286,9 @@ a.banner-btn.hb-light:hover {
   color: #49A078;
   margin-bottom: 0;
   padding-block: 5px;
+}
+.item-box-title:hover {
+  color: #c53672;
 }
 
 .item-title-box {
@@ -604,7 +609,7 @@ a.item-box-btn:hover {
 
 .testi-top-content {
   width: 100%;
-  max-width: 570px;
+  max-width: 580px;
   display: flex;
   flex-flow: wrap;
   justify-content: flex-start;
@@ -906,7 +911,7 @@ p.cta-box-desc {
 
 .video-sec-bg {
   position: relative;
-  min-height: calc(144vw + 15vw) !important;
+  min-height: unset;
 }
 
 .video-sec-bg::before {
@@ -933,6 +938,7 @@ p.cta-box-desc {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right top;
+  display: none !important;
 }
 
 .cta-main-sec::after {
@@ -2076,6 +2082,33 @@ form.sign-form-main textarea {
   border-radius: 30px;
 }
 
+.team-grid-img-text-box {
+  background-color: #cde7b0;
+  padding: 40px 10px 15px 10px;
+  margin-top: -25px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.team-grid-img-title {
+  color: #283522;
+  margin-bottom: 5px;
+  font-weight: 900;
+  letter-spacing: -0.005em;
+  font-size: 28px;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.team-grid-img-subtitle {
+  color: #283522;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+}
+
 .our-mission-sec {
   position: relative;
   background: linear-gradient(180deg, #CDE7B0 65.1%, rgba(205, 231, 176, 0) 100%);
@@ -2120,6 +2153,7 @@ form.sign-form-main textarea {
   text-align: center;
   color: #283522;
 }
+
 
 
 /* =================== About Us page css end ==================== */
@@ -3362,6 +3396,78 @@ p.testi-company {
 
 /* =================== Customer Stories page css end ==================== */
 
+.footer-main-bg-box {
+  background-color: #331112;
+    position: relative;
+}
+.footer-content-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-block: 4vw 3vw;
+}
+.footer-logo-box, .footer-usefull-links, .footer-contact-box {
+  width: 40%;
+}
+.footer-logo-box img.header-logo, .footer-logo-content {
+  width: 100%;
+  max-width: 250px;
+}
+.footer-main-title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin-bottom: 20px;
+}
+ul.footer-link-ul {
+  padding: 0;
+  list-style: none !important;
+  margin-bottom: 0;
+}
+li.footer-link-li {
+  padding-bottom: 10px;
+}
+a.footer-alink {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: -0.005em;
+  color: #FFFFFF;
+  margin: 0;
+}
+.footer-contact-box .contact-get-toch-cocial-box {
+  padding-top: 30px;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.footer-contact-box .contact-get-toch-cocial-box img.social-img {
+  width: 35px;
+}
+.copywrite-content, .copywrite-content a {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+  padding-block: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+.footer-copywrite-bg-box {
+  border-top: 1px solid #fff;
+}
+.footer-main-sec a:hover {
+  color: #49a078 !important;
+}
+.footer-logo-content {
+  color: #fff;
+  margin-bottom: 0;
+  padding-top: 25px;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
 
 /* ===================================================================
 ====================== Responsive css Start =======================
@@ -3523,7 +3629,7 @@ p.testi-company {
   }
 
   .testi-top-content {
-    max-width: 460px;
+    max-width: 470px;
   }
 
   .testimonial-top-title {
@@ -3787,7 +3893,10 @@ p.testi-company {
   }
   .customer-story-main-sec .testimonial-main-item-box.testi-right.sty1 {
     margin-top: -70px;
-}
+  }
+  .footer-main-title {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -3886,7 +3995,7 @@ p.testi-company {
   }
 
   .testi-top-content {
-    max-width: 370px;
+    max-width: 380px;
   }
 
   .testimonial-top-box {
@@ -4522,7 +4631,7 @@ p.testi-company {
     font-size: 22px;
   }
   .testi-top-content {
-    max-width: 290px;
+    max-width: 300px;
   }
   .testimonial-top-box {
     margin-bottom: 30px;
@@ -4605,6 +4714,37 @@ p.testi-company {
   }
   p.testi-name {
     font-size: 22px;
+  }
+  .footer-main-title {
+    font-size: 24px;
+  }
+  .footer-logo-box {
+    width: 100%;
+  }
+  .footer-usefull-links, .footer-contact-box {
+    width: 47%;
+  }
+  .footer-content-box {
+    justify-content: center;
+    padding-block: 40px 30px;
+    flex-flow: wrap;
+  }
+  .footer-logo-box img.header-logo, .footer-logo-content {
+    width: 100%;
+    max-width: 350px;
+    margin-inline: auto;
+    display: block;
+  }
+  .footer-logo-box .navbar-brand {
+    display: block;
+  }
+  .footer-logo-box .navbar-brand img.header-logo {
+    max-width: 180px;
+  }
+  .footer-logo-content {
+    margin-bottom: 10px;
+    padding-top: 15px;
+    text-align: center;
   }
 }
 
@@ -4712,8 +4852,11 @@ p.testi-company {
     width: calc(100% + 15px);
   }
   .about-us-banner-bg-line::before {
-    height: 290px;
+    height: 400px;
   }
+  .about-us-banner-sec {
+    overflow: hidden;
+}
   .about-banner-bottom-block-sec {
     z-index: 1;
   }
@@ -4763,6 +4906,42 @@ p.testi-company {
     height: calc(100% + 80px);
     top: -40px;
     right: calc(100% - 90px);
+  }
+  .testimonial-main-item-box {
+    max-width: 100%  !important;
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonial-item-img-box {
+    padding-top: 150px !important;
+    max-width: 150px !important;
+    border-radius: 40px;
+    position: relative !important;
+    margin-inline: auto !important;
+  }
+  .testimonial-item-content-box {
+    max-width: 300px !important;
+  }
+  .testimonial-main-item-box .testimonial-item-content-box {
+    margin-top: 15px !important;
+  }
+  .footer-logo-box, .footer-usefull-links, .footer-contact-box {
+    width: 100%;
+  }
+  .footer-main-title {
+    text-align: center;
+  }
+  a.footer-alink {
+    font-size: 16px;
+    display: block;
+  }
+  li.footer-link-li {
+    padding-bottom: 5px;
+  }
+  .footer-contact-box .contact-get-toch-cocial-box {
+    padding-top: 25px;
+    justify-content: center;
   }
 }
 
