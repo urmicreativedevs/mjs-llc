@@ -878,7 +878,7 @@ img.cta-main-img {
 .cta-content-box {
   position: relative;
   padding: 19% 11% 9% 0;
-  border-radius: 40px;
+  border-radius: 40px;                  
   background-image: url('../img/Group 95 (1).png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -889,6 +889,7 @@ img.cta-main-img {
   margin-inline: auto 0px;
   position: relative;
   max-width: 430px;
+  z-index: 1;
 }
 
 .cta-box-title {
@@ -3613,6 +3614,7 @@ a.footer-alink {
   max-width: 850px;
   margin-inline: auto;
   margin-top: 50px;
+  margin-bottom: 40px;
   padding: 50px 40px;
   background-color: rgb(205 231 176 / 70%);
   border-radius: 20px;
@@ -3768,10 +3770,155 @@ a.footer-alink {
   bottom: -20px;
   left: 6vw;
 }
-
-
+.cta-box-btn {
+  display: flex;
+  margin-top: 20px;
+}
+.pink-btn {
+  background: #C53672;
+  color: #FFFFFF;
+}
+.pink-btn:hover {
+  background: #283522;
+  color: #FFFFFF;
+}
+.price-boxs-btns {
+  display: flex;
+  justify-content: center;
+  margin-block: 0 40px;
+  position: relative;
+  z-index: 3;
+}
+table.pricing-new-chart-main-table-box {
+  width: 100%;
+  max-width: 900px;
+  margin-inline: auto;
+}
+.pricing-table-td-box {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+td.pricing-table-td-main-box, th.pricing-table-th-main-box {
+  padding: 15px;
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #ccc;
+  width: 50%;
+}
+.pricing-table-tbody-main-box tr td.pricing-table-td-main-box:first-child, .pricing-table-thead-main-box tr th.pricing-table-th-main-box:first-child {
+  border-width: 1px;
+}
+span.pricing-table-icon {
+  width: 16px;
+  fill: #49a078;
+  margin-right: 10px;
+}
+thead.pricing-table-thead-main-box {
+  background-color: #ccc;
+}
+.pricing-new-chart-main-table {
+  margin-top: 40px;
+}
+section.pricing-new-chart-main-section {
+  position: relative;
+  z-index: 1;
+  padding-block: 6vw 50px;
+}
+.price-boxs-sign {
+    text-align: center;
+    font-size: 200px;
+    margin-bottom: 45px;
+    display: block;
+    color: #C53672;
+    line-height: 1em;
+}
 
 /* =================== new price ===================== */
+
+/* =================== Blog Css Start ===================== */
+
+.Blog-main-banner-sec {
+  position: relative;
+  z-index: 1;
+}
+.Blog-main-banner-bg-main {
+  position: relative;
+  background-image: url('../img/blog-main-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+  padding-block: 13vw 12vw;
+}
+.Blog-main-banner-bg-main::before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  bottom: 0;
+  right: 0;
+  background-image: url('../img/blog-bottom-banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom right;
+  z-index: 0;
+}
+.Blog-main-banner-bg-main::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  background-image: url('../img/blog-top-banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+  z-index: 0;
+}
+.Blog-main-banner-content-box {
+  position: relative;
+  z-index: 1;
+  padding-left: 10vw;
+}
+.blog-block-main-title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  color: #283522;
+  margin-bottom: 20px;
+}
+.blog-bottom-block-sec {
+  position: relative;
+}
+.blog-bottom-block-bg {
+  position: relative;
+  background-color: #cde7b0;
+}
+.blog-block-desc-box p {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #283522;
+  margin-bottom: 10px;
+  display: block;
+}
+.blog-block-date-main p {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #283522;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+/* =================== Blog Css end ===================== */
 
 /* ===================================================================
 ====================== Responsive css Start =======================
@@ -4277,6 +4424,27 @@ a.footer-alink {
   .pricing-new-icon-text-box {
     padding: 40px 10px;
   }
+  .pricing-new-box-cont-title-style1 .pricing-new-content-title-main-style1 {
+    font-size: 54px;
+    max-width: 480px;
+  }
+  .pricing-new-box-cont-image-style1 {
+    width: 250px;
+    height: 250px;
+  }
+  .pricing-new-list-box-content-style1 {
+    max-width: 700px;
+    border: 16px solid rgb(197 54 114 / 50%);
+  }  
+  .pricing-new-list-box-main.two-box-style.second-main-box .pricing-new-list-box-content-style1 {
+    border: 16px solid rgb(112 112 112 / 50%);
+  }
+  .pricing-new-box-cont-desc-style1 p {
+    font-size: 24px;
+  }
+  .pricing-new-list-box-content-bg-style1 {
+    padding: 40px 30px;
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -4718,6 +4886,30 @@ a.footer-alink {
   .pricing-new-list-box-desc-note {
     margin-top: 40px;
     padding: 30px 30px;
+  }
+  .pricing-new-box-cont-image-style1 {
+    width: 200px;
+    height: 200px;
+  }
+  .pricing-new-box-cont-title-style1 .pricing-new-content-title-main-style1 {
+    font-size: 44px;
+    max-width: 280px;
+  }
+  .pricing-new-box-cont-desc-style1 p {
+    font-size: 20px;
+  }
+  .pricing-new-list-box-content-style1 {
+    max-width: 600px;
+    border: 14px solid rgb(197 54 114 / 50%);
+  }
+  .pricing-new-list-box-main.two-box-style.second-main-box .pricing-new-list-box-content-style1 {
+    border: 14px solid rgb(112 112 112 / 50%);
+  }
+  .pricing-new-box-cont-desc-style1 {
+    margin-top: 25px;
+  }
+  .pricing-new-box-cont-img-bg-style1 {
+    height: calc(20vw + 240px);
   }
 }
 
@@ -5175,6 +5367,20 @@ a.footer-alink {
   .pricing-new-desc-note-main-box p {
     font-size: 20px;
   }
+  .pricing-new-box-cont-image-style1 {
+    width: 170px;
+    height: 170px;
+  }
+  .pricing-new-box-cont-title-style1 .pricing-new-content-title-main-style1 {
+    font-size: 36px;
+    max-width: 280px;
+  }
+  .pricing-new-box-cont-desc-style1 p {
+    font-size: 18px;
+  }
+  .pricing-new-list-box-content-bg-style1 {
+    padding: 40px 30px 30px;
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -5399,6 +5605,29 @@ a.footer-alink {
   .pricing-new-desc-note-main-box p {
     font-size: 18px;
     text-align: center;
+  }
+  .pricing-new-box-cont-title-style1 {
+    gap: 20px;
+    padding-inline: 10px;
+    flex-direction: column;
+  }
+  .pricing-new-box-cont-title-style1 .pricing-new-content-title-main-style1 {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .pricing-new-list-box-content-bg-style1 {
+    padding: 30px 20px 20px;
+  }
+  .pricing-new-box-cont-desc-style1 p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .pricing-new-list-box-main.two-box-style.second-main-box .pricing-new-list-box-content-style1 {
+    border: 10px solid rgb(112 112 112 / 50%);
+  }
+  .pricing-new-list-box-content-style1 {
+    max-width: 600px;
+    border: 10px solid rgb(197 54 114 / 50%);
   }
   
 }
