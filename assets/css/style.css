@@ -3963,13 +3963,17 @@ section.pricing-new-chart-main-section {
   object-fit: cover;
 }
 
+.post-blogs-main-sec {
+  position: relative;
+  background: linear-gradient(180deg, #CDE7B0 76%, rgba(205, 231, 176, 0) 100%);
+  padding-bottom: 5vw;
+}
 .post-list-blog-sec {
   position: relative;
-  background-color: #cde7b0;
 }
 .post-list-blog-bg {
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   padding-block: 2vw;
 }
 .post-list-blog-title-main {
@@ -4003,7 +4007,7 @@ section.pricing-new-chart-main-section {
   border-radius: 30px;
 }
 .blog-grid-img-text-box {
-  background-color: #cde7b0;
+  /* background-color: #cde7b0; */
   padding: 30px 20px 30px 20px;
   margin-top: 0;
   border-bottom-left-radius: 30px;
@@ -4048,10 +4052,93 @@ section.pricing-new-chart-main-section {
   display: flex;
   flex-direction: column;
 }
+.post-list-blog-content-box {
+  position: relative;
+}
+.post-list-blog-content-box:before {
+  position: absolute;
+  content: '';
+  background-color: #49a078;
+  width: 100%;
+  height: calc(100% + 5vw);
+  display: block;
+  top: -13vw;
+  right: calc(100% + 20px);
+  z-index: 0;
+}
 
+.post-blogs-main-sec .post-list-blog-sec:nth-child(2) .post-list-blog-content-box:before {
+  height: calc(100% + 0vw);
+}
+.post-blogs-main-sec .post-list-blog-sec:nth-child(2)::before {
+  content: '';
+  background-image: url('../img/blog-multi-shap.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom center;
+  width: 100%;
+  height: 65vw;
+  bottom: -7vw;
+  position: absolute;
+  z-index: 2;
+}
+.post-list-blog-content-box > div {
+  position: relative;
+  z-index: 4;
+}
 
 
 /* =================== Blog Css end ===================== */
+
+/* =================== policy Css start ===================== */
+
+.policy-main-sec-box {
+  background-color: #cde7b0;
+  position: relative;
+  z-index: 1;
+  padding-block: 5vw;
+}
+.policy-main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.3;
+  text-align: left;
+  letter-spacing: -0.5px;
+  color: #283522;
+  margin-block: 30px 10px;
+  display: block;
+}
+.policy-content {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  color: #283522;
+  margin-block: 0 15px;
+  display: block;
+}
+.policy-main-section a {
+  color: #283522;
+}
+.policy-main-section a:hover {
+  color: #283522;
+  font-weight: 700;
+}
+.policy-ul-list li {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.8;
+  text-align: left;
+  color: #283522;
+  margin-block: 0 15px;
+}
+.policy-ul-list li span {
+  font-weight: 700;
+  display: block;
+}
+
+
+/* =================== policy Css end ===================== */
 
 /* ===================================================================
 ====================== Responsive css Start =======================
@@ -4096,6 +4183,34 @@ section.pricing-new-chart-main-section {
 }
 
 @media screen and (max-width:1399px) {
+  #mynavbar.navbar-collapse {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    background-color: #331112;
+    z-index: 99;
+  }
+
+  #mynavbar.navbar-collapse ul.navbar-nav {
+    width: 1140px;
+    margin: 20px auto 20px;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+
+  #mynavbar.navbar-collapse ul.navbar-nav li.nav-item {
+    padding-inline: 10px;
+  }
+
+  button.navbar-toggler,
+  .navbar-toggler-icon {
+    color: #fff !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    filter: contrast(0) brightness(1000%);
+  }
   .hero-banner-title {
     font-size: 70px;
   }
