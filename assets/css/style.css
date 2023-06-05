@@ -3831,12 +3831,15 @@ section.pricing-new-chart-main-section {
   padding-block: 6vw 50px;
 }
 .price-boxs-sign {
-    text-align: center;
-    font-size: 200px;
-    margin-bottom: 45px;
-    display: block;
-    color: #C53672;
-    line-height: 1em;
+  text-align: center;
+  font-size: 200px;
+  margin-bottom: 45px;
+  color: #C53672;
+  line-height: 1;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* =================== new price ===================== */
@@ -4078,7 +4081,7 @@ section.pricing-new-chart-main-section {
   background-position: bottom center;
   width: 100%;
   height: 65vw;
-  bottom: -7vw;
+  top: -13vw;
   position: absolute;
   z-index: 2;
 }
@@ -4299,6 +4302,26 @@ section.pricing-new-chart-main-section {
   }
   .new-demo-style .container > .row.align-items-center {
     padding-block: 70px 90px;
+  }
+  .blog-block-main-title {
+    font-size: 50px;
+    letter-spacing: 0px;
+  }
+  .blog-small-block-main-img {
+    width: 160px;
+    height: 200px;
+    margin-top: -85px;
+  }
+  .blog-block-desc-main {
+    padding-right: 170px;
+  }
+  .blog-block-main-img {
+    padding-top: 100%;
+    margin-left: 0px;
+  }
+  .blog-grid-img-title {
+    letter-spacing: -0.005px;
+    font-size: 26px;
   }
 }
 
@@ -4692,6 +4715,44 @@ section.pricing-new-chart-main-section {
   }
   .pricing-new-list-box-content-bg-style1 {
     padding: 40px 30px;
+  }
+  .blog-block-main-title {
+    font-size: 40px;
+  }
+  .blog-small-block-main-img {
+    width: 140px;
+    height: 180px;
+    margin-top: -120px;
+  }
+  .blog-block-desc-main {
+    padding-right: 150px;
+  }
+  .blog-grid-img-title {
+    letter-spacing: -0.005px;
+    font-size: 20px;
+  }
+  .blog-grid-img-disc {
+    font-size: 18px;
+  }
+  .post-list-blog-title-main {
+    font-size: 32px;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+  }
+  a.banner-btn {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 15px 30px;
+    border-radius: 12px;
+  }
+  .post-blogs-main-sec .post-list-blog-sec:nth-child(2) .post-list-blog-content-box:before {
+    height: calc(100% - 10vw);
+  }
+  .price-boxs-sign {
+    font-size: 160px;
+    margin-bottom: 45px;
+    line-height: 1;
+    height: 100px;
   }
 }
 
@@ -5158,6 +5219,38 @@ section.pricing-new-chart-main-section {
   }
   .pricing-new-box-cont-img-bg-style1 {
     height: calc(20vw + 240px);
+  }
+  .blog-block-main-title {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .blog-block-desc-main {
+    padding-right: 160px;
+  }
+  .blog-small-block-main-img {
+    width: 140px;
+    height: 180px;
+    margin-top: -130px;
+    margin-bottom: 30px;
+  }
+  .blog-block-main-img {
+    padding-top: 90%;
+    margin-left: 0px;
+  }
+  .post-list-blog-grid-box {
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .post-list-blog-content-box:before {
+    height: calc(100% + 5vw);
+    top: -2vw;
+  }
+  .price-boxs-sign {
+    font-size: 110px;
+    margin-bottom: 45px;
+    line-height: 1;
+    height: 50px;
   }
 }
 
@@ -5629,6 +5722,45 @@ section.pricing-new-chart-main-section {
   .pricing-new-list-box-content-bg-style1 {
     padding: 40px 30px 30px;
   }
+  .blog-block-main-title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .blog-block-desc-box p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .blog-block-date-main p {
+    font-size: 14px;
+    margin-block: 10px 20px;
+  }
+  .post-list-blog-title-main {
+    font-size: 28px;
+    letter-spacing: 0px;
+    margin-bottom: 30px;
+  }
+  .blog-grid-img-title {
+    letter-spacing: -0.005px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .blog-grid-img-disc {
+    font-size: 16px;
+  }
+  .blog-grid-img-date {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .blog-grid-img-text-box {
+    padding: 20px 15px;
+  }
+  .price-boxs-sign {
+    font-size: 80px;
+    margin-bottom: 55px;
+    line-height: 1;
+    height: 0px;
+  }
 }
 
 @media screen and (max-width:576px) {
@@ -5877,7 +6009,26 @@ section.pricing-new-chart-main-section {
     max-width: 600px;
     border: 10px solid rgb(197 54 114 / 50%);
   }
-  
+  .blog-block-main-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .blog-block-desc-main {
+    padding-right: 0;
+  }
+  .blog-small-block-main-img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-inline: auto;
+  }
+  .post-list-blog-grid-box {
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .post-blogs-main-sec .post-list-blog-sec:nth-child(2)::before {
+    display: none;
+  }
 }
 
 /* ===================================================================
